@@ -1,0 +1,475 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(./Images/pawel-czerwinski-M40QnK-PXkI-unsplash.jpg);
+    background-color: #7b67486b;
+    font-family: sans-serif; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+/*================= TOPBAR ====================*/
+.topbar{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #7b67486b;
+    overflow: hidden;
+}
+
+.topbar li{
+    height: 50px;
+}
+
+.topbar li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.topbar li a:hover{
+    background-color: #4e4c4c;
+}
+
+.topbar li:first-child{
+    margin-right: auto;
+}
+/*======================== SIDEBAR ========================*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(131, 127, 123, 0.484);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar a{
+    width: 100%;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #4e4c4c;
+}
+
+
+.active{
+    background-color: rgba(33, 108, 149, 0.667);
+}
+h1{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+p{
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;   
+}
+
+/*======================== PANELS ========================*/
+
+.container-1{
+    display: flex;
+}
+
+.panel{
+    background-size:auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in .4s;
+}
+
+/*======================== ABOUT ========================*/
+
+h2 {
+  text-align: center;
+  color: #476877;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+hr {
+  width: 60px;
+  height: 4px;
+  background: #a79f4f;
+  border: none;
+  margin: 10px auto 30px;
+  border-radius: 2px;
+}
+
+.about-section, .about-owner {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.owner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.owner-image {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.about-image img {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-1 {
+  margin-top: 50px;
+}
+
+.about-son {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.son-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.son-img img {
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .owner-section, .about, .about-son {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .owner-img, .about-image img, .son-img img {
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-body li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.Features{
+    padding-top: 10vh;
+}
+
+
+
+
+ .containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background-image: url(./Images/pawel-czerwinski-f5ITyZ8pi5I-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+ }
+
+ .fs-2{
+    background: hsla(37, 27%, 35%, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    justify-content: space-between;
+       
+ }
+.fs-2-containers{
+    display: flex;
+    gap: 1rem;
+}
+
+.contact a{
+    margin-right: 50px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #afb79e;
+    margin: 10% auto;
+    padding: 50px;
+    width: 300px;
+}
+/*======================== GALLERY =========================*/
+.gallery img{
+    width: 350px;
+    display: inline-block;
+    border: 1px solid pink;
+    border-radius: 10px;
+    margin: 5px;
+    
+    
+}
+/*======================== FEEDBACK =========================*/
+.main{
+    background: url(./Images/art.png);
+    background-repeat: repeat-y;
+
+}
+
+.content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+.info-box-full{
+    background-color: rgba(255, 255, 255, .8);
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.info-box-full img{
+    width: 100%;
+}
+
+.info-box-full h3{
+    text-align: center;
+}
+
+/*======================== FORM =========================*/
+
+input{
+    width: 100%;
+    height: 25px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+
+textarea{
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    background-color: rgba(33, 108, 149, 0.667);
+    text-decoration: none;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 8px 0;
+}
+
+/*======================== RECIPE =========================*/
+
+.recipe-content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.info-recipe-box-full {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(177, 170, 154);
+  padding: 2rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  
+}
+
+.info-recipe-box-full img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+.content-section{
+    flex: 2 1 600px;
+    padding: 2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.recipes-list {
+  flex: 1 1 400px; /* take remaining space */
+  min-width: 280px;
+}
+
+h3 {
+   color: #007bff;
+   font-size: 2rem;
+   margin-bottom: 1.5rem;
+}
+.recipes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 2rem;
+}
+.recipe {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe h4 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.recipe ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.recipe ul li {
+    margin-bottom: 6px;
+}
+
+.btn{
+    display: block;
+    width: 200px;
+    background-color: rgba(33, 108, 149, 0.667);
+    text-decoration: none;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px auto;
+    padding: 8px 0;
+    
+}
+
+
+
+@media(max-width: 800px) {
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
+}
